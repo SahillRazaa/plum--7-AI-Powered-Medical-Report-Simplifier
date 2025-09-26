@@ -57,6 +57,27 @@ This project was built iteratively to solve the complex problem of simplifying m
 *(Note: Provide either `file` or `text`. If both are provided, `file` takes precedence.)*
 
 ---
+## Postman Guide
+
+Simple guide to test the API using Postman.
+
+### Testing with Text Input
+1.  Set the method to **POST**.
+2.  Enter the request URL: `https://care-simplifier.onrender.com/api/v1/simplify-report` (or `http://localhost:8000/api/v1/simplify-report` for local testing).
+3.  Go to the **Body** tab and select **form-data**.
+4.  In the `KEY` column, enter `text`.
+5.  In the `VALUE` column, paste the medical report text.
+6.  Click **Send**.
+
+### Testing with Image Input
+1.  Follow steps 1-3 from the text input guide.
+2.  In the `KEY` column, enter `file`.
+3.  On the right side of the `KEY` field, a dropdown will say "Text". Click it and change it to **"File"**.
+4.  The `VALUE` column will now show a "Select Files" button. Click it and choose your image.
+5.  Make sure any `text` fields are unchecked.
+6.  Click **Send**.
+
+---
 ## Prerequisites, Setup, and Usage
 
 ### Prerequisites
@@ -83,7 +104,7 @@ This project requires a Google Gemini API key.
 
 ### Local Setup
 
-1.  **Clone the repository:** `git clone <your-repo-url>`
+1.  **Clone the repository:** `git clone https://github.com/SahillRazaa/plum--7-AI-Powered-Medical-Report-Simplifier.git`
 2.  **Install dependencies:** `npm install`
 3.  **Set up environment variables:** Create a `.env` file (using `.env.example` as a template) and add your Gemini API Key.
 4.  **Run the server:** `npm run dev`
