@@ -8,12 +8,15 @@ A production-ready backend service that takes a medical report (as text or an im
 
 **Live Demo Endpoint:** `https://care-simplifier.onrender.com`
 
+**Demo Video:**
+[![Watch the demo](assets/video-thumb.png)](https://youtu.be/l6TTf2qU8EM)
+
 ---
 ## The Journey: From Problem to Solution
 
 This project was built iteratively to solve the complex problem of simplifying medical reports. The development process focused on creating a robust, resilient, and intelligent service that could handle the ambiguities of real-world data.
 
-1.  **Initial Ideation:** The goal was to create an API that could translate medical jargon. The initial design was a simple two-step AI pipeline: one call to structure the data and a second to summarize it.
+1.  **Initial Ideation:** The goal was to create an API that could translate medical jargon. The initial design was a simple two-step AI pipeline: one call to structure the data and a second to summarize it. Check out [DESIGN MD](DESIGN.md)
 
 2.  **Building the Core Pipeline:** A multi-step pipeline was designed using Google Gemini. The first AI call normalizes the data into a structured format, and the second, using an advanced **few-shot prompt**, translates that structured data into a patient-friendly summary.
 
